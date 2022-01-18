@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<SelectDialog id="tableAdditional" title="invoices" confirm="onClickConfirmSH" 	items="{
+			path: 'invoice>/Invoices',
+			sorter: {
+				path: 'ProductName',
+				descending: false
+			}
+		}" search="onSearch">
+		<StandardListItem description="{invoice>ExtendedPrice} {invoice>Currency}" title="{invoice>ProductName} - {invoice>ShipperName}" type="Active" icon ="{ path:'invoice>Abbreviation', formatter:'.formatter.iconSelection' }"></StandardListItem> 
+		
+	</SelectDialog>
+</core:FragmentDefinition>

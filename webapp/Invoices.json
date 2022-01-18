@@ -1,0 +1,49 @@
+{
+"Invoices": [
+{
+"ProductName": "Web Cam",
+"Quantity": 21,
+"ExtendedPrice": 87.2000,
+"ShipperName": "Xiaomi",
+"ShippedDate": "2015-04-01T00:00:00",
+"Abbreviation": "WC",
+"Currency": "IDR"
+},
+{
+"ProductName": "Washing Machine",
+"Quantity": 4,
+"ExtendedPrice": 9.99999,
+"ShipperName": "Sharp",
+"ShippedDate": "2015-02-18T00:00:00",
+"Abbreviation": "WM",
+"Currency": "IDR"
+},
+{
+"ProductName": "Speaker",
+"Quantity": 3,
+"ExtendedPrice": 6.85000,
+"ShipperName": "Sony",
+"ShippedDate": "2015-03-02T00:00:00",
+"Abbreviation": "S",
+"Currency": "IDR"
+},
+{
+"ProductName": "Calculator",
+"Quantity": 2,
+"ExtendedPrice": 8.8000,
+"ShipperName": "Casio",
+"ShippedDate": "2015-04-12T00:00:00",
+"Abbreviation": "C",
+"Currency": "IDR"
+},
+{
+"ProductName": "Floppy Disk",
+"Quantity": 1,
+"ExtendedPrice": 2.71212,
+"ShipperName": "Jadul Shop",
+"ShippedDate": "2015-01-27T00:00:00",
+"Abbreviation": "FD",
+"Currency": "IDR"
+}
+]
+}
