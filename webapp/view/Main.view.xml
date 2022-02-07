@@ -1,0 +1,70 @@
+<!-- <mvc:View
+    controllerName="aaufar.fiorijsonsampleproject.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content />
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View> -->
+
+<mvc:View controllerName="aaufar.fiorijsonsampleproject.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<f:SimpleForm id="simpleForm" layout="ResponsiveGridLayout" editable="true" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12"
+					adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+					singleContainerFullSize="false" ariaLabelledBy="Title1">
+					<f:content>
+						<Label text="{i18n>labelInput}" design="{i18n>labelFontType}"></Label>
+						<Input></Input>
+						<Label text="{i18n>labelDatePicker}" design="{i18n>labelFontType}"></Label>
+						<DatePicker id="datePicker" required="true"></DatePicker>
+						<Label text="{i18n>labelTextArea}" design="{i18n>labelFontType}"></Label>
+						<TextArea id="textArea" showExceededText="true" required="true" maxLength="100" liveChange="onLiveChangeTextArea"></TextArea>
+						<Label text="{i18n>labelComboBox}" design="{i18n>labelFontType}"></Label>
+						<ComboBox id="comboBox">
+							<core:Item key="1" text="satu"/>
+							<core:Item  key="2" text="dua"/>
+						</ComboBox>
+						<Label text="Switch" design="{i18n>labelFontType}"></Label>
+						<HBox>
+							<Switch type="{i18n>labelSwitchType}" id="Switch"></Switch>
+						</HBox>
+						<Label text="MultiComboBox" design="{i18n>labelFontType}"></Label>
+						<MultiComboBox selectionFinish="onSelectionFinish">
+							<core:Item key="AZ" text="AZ"/>
+							<core:Item key="SIN" text="Sinovac"/>
+							<core:Item key="SINO" text="Sinopharm"/>
+						</MultiComboBox>
+						<Label text="RadioButton" design="{i18n>labelFontType}"></Label>
+						<RadioButtonGroup id="radioButtonGroup">
+							<RadioButton id="Option1" text="Option 1"></RadioButton>
+							<RadioButton id="Option2" text="Option 2"></RadioButton>
+							<RadioButton id="Option3" text="Option 3"></RadioButton>
+						</RadioButtonGroup>
+						<Label text="CheckBox" design="{i18n>labelFontType}"></Label>
+						<CheckBox></CheckBox>
+						<Label text="InputSearchHelp" design="{i18n>labelFontType}"></Label>
+						<Input id="searchHelp" valueHelpRequest="onSearchHelp" showValueHelp="true" valueHelpOnly="true"></Input>
+					</f:content>
+				</f:SimpleForm>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer></ToolbarSpacer>
+						<Button text="{i18n>labelSubmitButton}" type="Accept" press="onSubmit"></Button>
+						<Button text="{i18n>labelCancelButton}" type="Reject"></Button>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
