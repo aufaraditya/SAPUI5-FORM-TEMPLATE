@@ -34,3 +34,31 @@ A Fiori application with JSON Data as Source
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
+# Sample Web App using SAPUI5 Components for Form
+
+## The template Web App using features such as:
+
+### Controller
+- Custom Fragment for Search Help dialog Box as SearchDialog
+- disable manual Input for DatePicker
+- onLiveChange Event
+- onAfterRendering Event
+- Filter & Filter Operator utilized in Search Items in Search Help
+
+
+### Model
+- Formatter
+- Values for InputSearchHelp stored as invoices.json in webapp/Invoices.json
+
+### View
+- Input
+- SimpleForm
+- DatePicker
+- TextArea
+- ComboBox
+- MultiComboBox
+- Switch
+- RadioButton
+- CheckBox
+- InputSearchHelp
+
